@@ -80,3 +80,91 @@ label{
     color: rgb(1,1,90);
     border: .1rem solid rgb(1,1,90)
 }
+
+.modal input[type=submit]:hover{
+    box-shadow: 0 -.3rem .5rem rgba(255,255,255,.3);
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    float:left;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    border: .1rem solid rgb(1,1,90);
+    font-size: 2.5rem;
+    text-align:center;
+    color:rgb(1,1,90);
+}
+
+
+.btn_restart,.btn_quit{
+    padding:.6rem 1.6rem;
+    font-size:1.2rem;
+    margin:0 .3rem;
+    box-shadow: 0 .1rem .2rem rgb(1,1,90);
+    color:#fff;
+    border-radius:1.2rem;
+    cursor: pointer;
+
+}
+
+
+
+.btn_restart{
+    background-image:linear-gradient(to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%)
+}
+
+.btn_restart:hover{
+    color: rgb(1,1,90);
+    box-shadow:0 -.3rem .5rem rgba(255,255,255, .2);
+
+}
+
+
+.btn_quit {
+    background-image : linear-gradient(to right,
+    #d31027 0%,
+    #5c0711 61%,
+    #ea384d 80%);
+    }
+
+.btn_quit:hover{
+    color: rgb(1, 1, 90);
+    box-shadow: 0 -.3rem .5rem rgba(255, 255, 255, .2);
+    
+
+}
+
+@media(max-width:1200px){
+.control{
+    left:10%;
+}
+
+}
+
+@media(max-width:560px){
+    .area .title{
+        font-size:2, 4rem;
+    }
+    label{
+        margin-top: 5rem;
+    }
+    .control{
+        bottom:1rem;
+    }
+}
+@media (max-width: 360px){
+    .area .title{
+        font-size:2rem;
+    }
+    .area .btnStart{
+        font-size: 1rem;
+        padding:1rem 1.8rem;
+    }
+}
+
